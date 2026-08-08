@@ -1,6 +1,11 @@
 /* =========================================
-   SIMRAN KAUR - TECHNICAL WRITER PORTFOLIO
+   SIMRAN KAUR | TECHNICAL WRITER PORTFOLIO
    ========================================= */
+
+
+/* ---------- Fonts ---------- */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap');
 
 
 /* ---------- Base ---------- */
@@ -16,31 +21,35 @@ html {
 }
 
 body {
-    font-family: "Segoe UI", Arial, sans-serif;
+    font-family: "DM Sans", Arial, sans-serif;
+    background: #fffaf9;
+    color: #302b2d;
     line-height: 1.7;
-    color: #292929;
-    background: #fcfbf9;
 }
 
 a {
-    color: inherit;
     text-decoration: none;
+    color: inherit;
 }
 
 p {
-    color: #5d5d5d;
+    color: #665f62;
 }
 
 
 /* ---------- Navigation ---------- */
 
 header {
-    padding: 22px 7%;
-    background: #fcfbf9;
-    border-bottom: 1px solid #e9e6e2;
     position: sticky;
     top: 0;
     z-index: 100;
+
+    padding: 22px 7%;
+
+    background: rgba(255, 250, 249, 0.94);
+    backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid #eee1e3;
 }
 
 nav {
@@ -51,13 +60,15 @@ nav {
 }
 
 nav a {
-    font-size: 15px;
-    color: #444;
-    transition: 0.3s ease;
+    font-size: 14px;
+    font-weight: 500;
+    color: #51494c;
+
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #8c5a72;
+    color: #a7657e;
 }
 
 
@@ -68,101 +79,217 @@ section {
 }
 
 section h2 {
-    font-size: 38px;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 42px;
+    font-weight: 500;
     line-height: 1.2;
+
+    color: #302b2d;
+
     margin-bottom: 35px;
-    color: #292929;
 }
 
 
 /* ---------- Hero ---------- */
 
 #hero {
-    min-height: 82vh;
-    max-width: 1100px;
-    margin: 0 auto;
+    position: relative;
+
+    min-height: 86vh;
+    max-width: 1200px;
+
+    margin: auto;
+
     padding-top: 120px;
     padding-bottom: 120px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    overflow: hidden;
 }
+
+
+/* Soft decorative pastel circle */
+
+#hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 420px;
+    height: 420px;
+
+    right: -100px;
+    top: 90px;
+
+    background: #f4dfe5;
+
+    border-radius: 50%;
+
+    opacity: 0.55;
+
+    z-index: -1;
+}
+
+
+/* Small lavender decoration */
+
+#hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 150px;
+    height: 150px;
+
+    right: 190px;
+    bottom: 60px;
+
+    background: #e8e1f3;
+
+    border-radius: 50%;
+
+    opacity: 0.6;
+
+    z-index: -1;
+}
+
+
+/* Small professional label */
 
 #hero > p:first-child {
     font-size: 13px;
+
     letter-spacing: 3px;
-    color: #8c5a72;
+
     font-weight: 600;
+
+    color: #a7657e;
+
     margin-bottom: 22px;
 }
 
+
+/* Name */
+
 #hero h1 {
-    font-size: clamp(52px, 7vw, 82px);
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: clamp(58px, 8vw, 94px);
+
+    font-weight: 500;
+
     line-height: 1;
-    letter-spacing: -2px;
+
+    letter-spacing: -3px;
+
+    color: #302b2d;
+
     margin-bottom: 30px;
-    color: #292929;
 }
+
+
+/* Main tagline */
 
 #hero h2 {
     max-width: 850px;
-    font-size: clamp(28px, 4vw, 46px);
-    line-height: 1.25;
+
+    font-family: "DM Sans", Arial, sans-serif;
+
+    font-size: clamp(30px, 4vw, 48px);
+
     font-weight: 400;
-    letter-spacing: -1px;
+
+    line-height: 1.25;
+
+    letter-spacing: -1.5px;
+
+    color: #40393c;
+
     margin-bottom: 28px;
-    color: #3a3a3a;
 }
+
+
+/* Introduction */
 
 #hero > p:not(:first-child) {
     max-width: 720px;
+
     font-size: 17px;
+
+    line-height: 1.8;
+
     margin-bottom: 35px;
 }
 
 
-/* ---------- Hero Buttons ---------- */
+/* ---------- Buttons ---------- */
 
 #hero a {
     display: inline-block;
+
     width: auto;
-    margin-right: 12px;
+
+    padding: 13px 25px;
+
+    margin-right: 10px;
     margin-bottom: 10px;
-    padding: 13px 24px;
 
-    border: 1px solid #292929;
+    border-radius: 30px;
 
-    font-size: 15px;
+    border: 1px solid #a7657e;
+
+    color: #a7657e;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
     transition: all 0.3s ease;
 }
 
 #hero a:hover {
-    background: #292929;
+    background: #a7657e;
+
     color: white;
+
+    transform: translateY(-2px);
 }
 
+
+/* Resume button */
+
 #hero a:last-child {
-    border-color: #d8c5cd;
-    color: #8c5a72;
+    background: #f2dce3;
+
+    border-color: #f2dce3;
+
+    color: #6e4655;
 }
 
 #hero a:last-child:hover {
-    background: #8c5a72;
-    color: white;
+    background: #e5c3ce;
+
+    border-color: #e5c3ce;
+
+    color: #4f343e;
 }
 
 
 /* ---------- What I Do ---------- */
 
 #what-i-do {
-    background: #f3efed;
+    background: #f7f1f2;
 }
 
 #what-i-do > div {
     max-width: 850px;
-    padding: 28px 0;
-    border-bottom: 1px solid #ddd5d1;
+
+    padding: 27px 0;
+
+    border-bottom: 1px solid #e5d8db;
 }
 
 #what-i-do > div:last-child {
@@ -170,9 +297,15 @@ section h2 {
 }
 
 #what-i-do h3 {
-    font-size: 22px;
+    font-family: "DM Sans", Arial, sans-serif;
+
+    font-size: 21px;
+
+    font-weight: 600;
+
+    color: #40373a;
+
     margin-bottom: 7px;
-    color: #292929;
 }
 
 #what-i-do p {
@@ -183,19 +316,39 @@ section h2 {
 /* ---------- Featured Work ---------- */
 
 #featured-work {
-    background: #fcfbf9;
+    background: #fffaf9;
 }
 
 #featured-work > div {
-    max-width: 850px;
-    padding: 30px 0;
-    border-bottom: 1px solid #e4dfdc;
+    max-width: 900px;
+
+    padding: 30px;
+
+    margin-bottom: 18px;
+
+    background: #fff;
+
+    border: 1px solid #eee0e3;
+
+    border-radius: 14px;
+
+    transition: all 0.3s ease;
+}
+
+#featured-work > div:hover {
+    transform: translateY(-4px);
+
+    border-color: #e2c3cc;
+
+    box-shadow: 0 12px 35px rgba(100, 70, 80, 0.08);
 }
 
 #featured-work h3 {
-    font-size: 23px;
+    font-size: 22px;
+
     margin-bottom: 8px;
-    color: #292929;
+
+    color: #40373a;
 }
 
 #featured-work p {
@@ -204,36 +357,39 @@ section h2 {
 
 #featured-work a {
     display: inline-block;
-    margin-top: 14px;
-    color: #8c5a72;
-    font-weight: 600;
-    border-bottom: 1px solid #8c5a72;
-    padding-bottom: 2px;
-    transition: 0.3s ease;
-}
 
-#featured-work a:hover {
-    color: #292929;
-    border-color: #292929;
+    margin-top: 15px;
+
+    color: #a7657e;
+
+    font-weight: 600;
+
+    border-bottom: 1px solid #a7657e;
+
+    padding-bottom: 2px;
 }
 
 
 /* ---------- About ---------- */
 
 #about-preview {
-    background: #f3efed;
+    background: #eee9f5;
 }
 
 #about-preview p {
     max-width: 760px;
+
     font-size: 18px;
+
     margin-bottom: 25px;
 }
 
 #about-preview a {
-    color: #8c5a72;
+    color: #80648f;
+
     font-weight: 600;
-    border-bottom: 1px solid #8c5a72;
+
+    border-bottom: 1px solid #80648f;
 }
 
 
@@ -241,30 +397,62 @@ section h2 {
 
 #contact-preview {
     text-align: center;
-    background: #292929;
+
+    background: #40363a;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+#contact-preview::before {
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    left: -100px;
+    top: -120px;
+
+    background: #d9bfd0;
+
+    border-radius: 50%;
+
+    opacity: 0.2;
 }
 
 #contact-preview h2 {
-    color: white;
+    color: #fffaf9;
 }
 
 #contact-preview p {
     max-width: 600px;
-    margin: 0 auto 25px;
-    color: #d5d5d5;
+
+    margin: 0 auto 28px;
+
+    color: #ddd2d5;
 }
 
 #contact-preview a {
     display: inline-block;
-    padding: 12px 24px;
-    border: 1px solid white;
-    color: white;
-    transition: 0.3s ease;
+
+    padding: 12px 26px;
+
+    border: 1px solid #f2dce3;
+
+    border-radius: 30px;
+
+    color: #f8e8ed;
+
+    transition: all 0.3s ease;
 }
 
 #contact-preview a:hover {
-    background: white;
-    color: #292929;
+    background: #f2dce3;
+
+    color: #40363a;
 }
 
 
@@ -272,18 +460,22 @@ section h2 {
 
 footer {
     padding: 28px 10%;
+
     text-align: center;
-    background: #292929;
-    border-top: 1px solid #444;
+
+    background: #40363a;
+
+    border-top: 1px solid #5b5054;
 }
 
 footer p {
     font-size: 13px;
-    color: #aaa;
+
+    color: #bdb2b5;
 }
 
 
-/* ---------- Mobile Responsive ---------- */
+/* ---------- Mobile ---------- */
 
 @media (max-width: 768px) {
 
@@ -293,12 +485,14 @@ footer p {
 
     nav {
         justify-content: center;
+
         flex-wrap: wrap;
-        gap: 15px 20px;
+
+        gap: 12px 18px;
     }
 
     nav a {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     section {
@@ -307,12 +501,31 @@ footer p {
 
     #hero {
         min-height: auto;
+
         padding-top: 90px;
         padding-bottom: 90px;
     }
 
+    #hero::after {
+        width: 260px;
+        height: 260px;
+
+        right: -120px;
+        top: 80px;
+    }
+
+    #hero::before {
+        width: 90px;
+        height: 90px;
+
+        right: 80px;
+        bottom: 30px;
+    }
+
     #hero h1 {
-        font-size: 52px;
+        font-size: 58px;
+
+        letter-spacing: -2px;
     }
 
     #hero h2 {
@@ -324,10 +537,11 @@ footer p {
     }
 
     section h2 {
-        font-size: 32px;
+        font-size: 34px;
     }
 
     #hero a {
         margin-right: 5px;
     }
+
 }
