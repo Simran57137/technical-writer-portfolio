@@ -940,3 +940,305 @@ footer p {
     }
 
 }
+
+/* =========================================
+   PORTFOLIO / WORK PAGE
+   ========================================= */
+
+
+/* ---------- Portfolio Hero ---------- */
+
+.portfolio-hero {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding-top: 105px;
+    padding-bottom: 80px;
+}
+
+.portfolio-hero h1 {
+    max-width: 850px;
+
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: clamp(48px, 6vw, 72px);
+
+    font-weight: 500;
+
+    line-height: 1.15;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 28px;
+}
+
+.portfolio-hero > p:last-child {
+    max-width: 750px;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+}
+
+
+/* ---------- Work Section ---------- */
+
+.work-section {
+    background: #f7f1f2;
+}
+
+.work-intro {
+    max-width: 1100px;
+
+    margin: 0 auto 45px;
+}
+
+.work-intro h2 {
+    margin-bottom: 0;
+}
+
+
+/* ---------- Work Grid ---------- */
+
+.work-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 22px;
+}
+
+
+/* ---------- Work Cards ---------- */
+
+.work-card {
+    position: relative;
+
+    padding: 32px;
+
+    background: #fffaf9;
+
+    border: 1px solid #eadcdf;
+
+    border-radius: 16px;
+
+    min-height: 360px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    transition: all 0.3s ease;
+}
+
+.work-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #d9b9c4;
+
+    box-shadow: 0 15px 35px rgba(100, 70, 80, 0.08);
+}
+
+
+/* First card */
+
+.featured-work-card {
+    background: #eee9f5;
+
+    border-color: #ddd2e8;
+}
+
+
+/* Card number */
+
+.work-number {
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: 20px;
+
+    color: #a7657e;
+
+    margin-bottom: 28px;
+}
+
+
+/* Card content */
+
+.work-content {
+    margin-top: auto;
+}
+
+.work-type {
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    font-weight: 600;
+
+    color: #a7657e;
+
+    margin-bottom: 10px;
+}
+
+.work-content h3 {
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: 30px;
+
+    font-weight: 500;
+
+    line-height: 1.2;
+
+    margin-bottom: 15px;
+
+    color: #40363a;
+}
+
+.work-content > p:not(.work-type) {
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+
+/* ---------- Work Tags ---------- */
+
+.work-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin-bottom: 20px;
+}
+
+.work-tags span {
+    padding: 5px 10px;
+
+    background: #f4e7eb;
+
+    border: 1px solid #ead4da;
+
+    border-radius: 20px;
+
+    color: #805365;
+
+    font-size: 11px;
+}
+
+
+/* ---------- Work Links ---------- */
+
+.work-content a {
+    display: inline-block;
+
+    color: #a7657e;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    border-bottom: 1px solid #a7657e;
+
+    padding-bottom: 2px;
+}
+
+.work-content a:hover {
+    color: #40363a;
+
+    border-color: #40363a;
+}
+
+
+/* ---------- Portfolio CTA ---------- */
+
+.portfolio-cta {
+    text-align: center;
+
+    background: #40363a;
+}
+
+.portfolio-cta .section-label {
+    color: #d9bfd0;
+}
+
+.portfolio-cta h2 {
+    max-width: 700px;
+
+    margin: 0 auto 25px;
+
+    color: #fffaf9;
+}
+
+.portfolio-cta > p:not(.section-label) {
+    max-width: 650px;
+
+    margin: 0 auto 30px;
+
+    color: #ddd2d5;
+}
+
+.portfolio-cta a {
+    display: inline-block;
+
+    padding: 12px 26px;
+
+    border: 1px solid #f2dce3;
+
+    border-radius: 30px;
+
+    color: #f8e8ed;
+
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.portfolio-cta a:hover {
+    background: #f2dce3;
+
+    color: #40363a;
+}
+
+
+/* ---------- Portfolio Mobile ---------- */
+
+@media (max-width: 768px) {
+
+    .portfolio-hero {
+        padding-top: 80px;
+
+        padding-bottom: 60px;
+    }
+
+    .portfolio-hero h1 {
+        font-size: 48px;
+    }
+
+    .portfolio-hero > p:last-child {
+        font-size: 17px;
+    }
+
+    .work-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .work-card {
+        min-height: 330px;
+
+        padding: 27px;
+    }
+
+    .work-content h3 {
+        font-size: 27px;
+    }
+
+}
