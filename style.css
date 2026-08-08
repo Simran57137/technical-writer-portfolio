@@ -644,8 +644,8 @@ footer p {
 
     margin: auto;
 
-    padding-top: 120px;
-    padding-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 65px;
 }
 
 .section-label {
@@ -692,11 +692,14 @@ footer p {
 .about-content {
     display: grid;
 
-    grid-template-columns: 1.4fr 0.8fr;
+    grid-template-columns: 1.3fr 0.7fr;
 
-    gap: 80px;
+    gap: 70px;
 
     background: #f7f1f2;
+
+    padding-top: 75px;
+    padding-bottom: 75px;
 }
 
 .about-main h2 {
