@@ -631,3 +631,309 @@ footer p {
     }
 
 }
+
+/* =========================================
+   ABOUT PAGE
+   ========================================= */
+
+
+/* ---------- Page Hero ---------- */
+
+.page-hero {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+
+.section-label {
+    font-size: 13px;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+
+    color: #a7657e;
+
+    margin-bottom: 22px;
+}
+
+.page-hero h1 {
+    max-width: 850px;
+
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: clamp(48px, 6vw, 72px);
+
+    font-weight: 500;
+
+    line-height: 1.15;
+
+    letter-spacing: -2px;
+
+    color: #302b2d;
+
+    margin-bottom: 30px;
+}
+
+.page-intro {
+    max-width: 760px;
+
+    font-size: 19px;
+
+    line-height: 1.8;
+}
+
+
+/* ---------- About Content ---------- */
+
+.about-content {
+    display: grid;
+
+    grid-template-columns: 1.4fr 0.8fr;
+
+    gap: 80px;
+
+    background: #f7f1f2;
+}
+
+.about-main h2 {
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: 40px;
+
+    font-weight: 500;
+
+    margin-bottom: 28px;
+}
+
+.about-main p {
+    max-width: 720px;
+
+    font-size: 17px;
+
+    margin-bottom: 22px;
+}
+
+
+/* ---------- About Cards ---------- */
+
+.about-side {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+.about-card {
+    padding: 25px;
+
+    background: #fffaf9;
+
+    border: 1px solid #eadcdf;
+
+    border-radius: 14px;
+
+    transition: all 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 12px 30px rgba(100, 70, 80, 0.08);
+}
+
+.about-card span {
+    display: block;
+
+    color: #a7657e;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    margin-bottom: 12px;
+}
+
+.about-card h3 {
+    font-size: 20px;
+
+    margin-bottom: 8px;
+}
+
+.about-card p {
+    font-size: 14px;
+}
+
+
+/* ---------- Skills ---------- */
+
+.skills-section {
+    background: #eee9f5;
+}
+
+.skills-section h2 {
+    margin-bottom: 35px;
+}
+
+.skills-grid {
+    max-width: 1000px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+.skills-grid span {
+    padding: 10px 17px;
+
+    background: #fffaf9;
+
+    border: 1px solid #ddd2e8;
+
+    border-radius: 30px;
+
+    color: #6e5a78;
+
+    font-size: 14px;
+
+    transition: all 0.3s ease;
+}
+
+.skills-grid span:hover {
+    background: #e5dcef;
+
+    transform: translateY(-2px);
+}
+
+
+/* ---------- Education ---------- */
+
+.education-section {
+    background: #fffaf9;
+}
+
+.education-item {
+    max-width: 900px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    gap: 30px;
+
+    padding: 28px 0;
+
+    border-bottom: 1px solid #eadfe1;
+}
+
+.education-item h3 {
+    font-size: 20px;
+
+    margin-bottom: 5px;
+}
+
+.education-item p {
+    font-size: 15px;
+}
+
+.education-item > span {
+    color: #a7657e;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+/* ---------- About CTA ---------- */
+
+.about-cta {
+    text-align: center;
+
+    background: #40363a;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.about-cta h2 {
+    color: #fffaf9;
+}
+
+.about-cta p {
+    max-width: 600px;
+
+    margin: 0 auto 28px;
+
+    color: #ddd2d5;
+}
+
+.about-cta a {
+    display: inline-block;
+
+    padding: 12px 26px;
+
+    border: 1px solid #f2dce3;
+
+    border-radius: 30px;
+
+    color: #f8e8ed;
+
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.about-cta a:hover {
+    background: #f2dce3;
+
+    color: #40363a;
+}
+
+
+/* ---------- About Mobile ---------- */
+
+@media (max-width: 768px) {
+
+    .page-hero {
+        padding-top: 80px;
+
+        padding-bottom: 70px;
+    }
+
+    .page-hero h1 {
+        font-size: 48px;
+    }
+
+    .page-intro {
+        font-size: 17px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+    .about-main h2 {
+        font-size: 34px;
+    }
+
+    .education-item {
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+}
