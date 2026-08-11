@@ -41,6 +41,10 @@ p {
    NAVIGATION
    ========================================= */
 
+/* =========================================
+   NAVIGATION
+========================================= */
+
 .site-header {
     width: 100%;
     background: #fffafa;
@@ -48,34 +52,30 @@ p {
 }
 
 .nav-container {
+    width: 100%;
     max-width: 1550px;
     margin: 0 auto;
-
     padding: 24px 55px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    box-sizing: border-box;
 }
 
 .site-logo {
     font-family: "Playfair Display", Georgia, serif;
-
     font-size: 25px;
     font-weight: 600;
-
     color: #40363a;
-
     text-decoration: none;
-
     white-space: nowrap;
 }
 
 .main-nav {
     display: flex;
-
     align-items: center;
-
     justify-content: flex-end;
 
     gap: 38px;
@@ -91,9 +91,7 @@ p {
     font-weight: 500;
 
     color: #554c50;
-
     text-decoration: none;
-
     white-space: nowrap;
 
     transition: color 0.25s ease;
@@ -107,6 +105,39 @@ p {
     color: #a7657e;
 }
 
+
+/* =========================================
+   RESUME DOWNLOAD BUTTON
+========================================= */
+
+.main-nav .resume-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 20px;
+
+    border: 1px solid #d88ca3;
+    border-radius: 30px;
+
+    color: #a7657e;
+    background: transparent;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.main-nav .resume-btn:hover {
+    background: #a7657e;
+    border-color: #a7657e;
+    color: #ffffff;
+}
 
 /* =========================================
    MOBILE NAVIGATION
@@ -2170,95 +2201,4 @@ footer p {
         grid-template-columns: 1fr;
     }
 
-}
-
-/* =========================================
-   FINAL NAVIGATION FIX
-========================================= */
-
-.site-header {
-    width: 100%;
-    background: #fffafa;
-    border-bottom: 1px solid #eadfe2;
-}
-
-.nav-container {
-    width: 100%;
-    max-width: 1550px;
-    margin: 0 auto;
-    padding: 22px 55px;
-
-    box-sizing: border-box;
-
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-}
-
-.site-logo {
-    display: block !important;
-
-    font-family: "Playfair Display", Georgia, serif !important;
-    font-size: 25px !important;
-    font-weight: 600 !important;
-
-    color: #40363a !important;
-    text-decoration: none !important;
-
-    white-space: nowrap !important;
-}
-
-.main-nav {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    justify-content: flex-end !important;
-
-    gap: 34px !important;
-
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-.main-nav a {
-    display: inline-flex !important;
-    align-items: center !important;
-
-    font-family: "DM Sans", Arial, sans-serif !important;
-    font-size: 15px !important;
-    font-weight: 500 !important;
-
-    color: #554c50 !important;
-
-    text-decoration: none !important;
-    white-space: nowrap !important;
-}
-
-.main-nav a:hover {
-    color: #a7657e !important;
-}
-
-
-/* Resume button */
-
-.main-nav .resume-btn {
-    display: inline-flex !important;
-    align-items: center !important;
-    gap: 6px !important;
-
-    padding: 10px 20px !important;
-
-    border: 1px solid #c9829a !important;
-    border-radius: 30px !important;
-
-    color: #a7657e !important;
-    background: transparent !important;
-
-    transition: all 0.3s ease !important;
-}
-
-.main-nav .resume-btn:hover {
-    background: #f4dfe5 !important;
-    color: #8f5269 !important;
 }
