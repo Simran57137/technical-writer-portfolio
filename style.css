@@ -2239,52 +2239,40 @@ footer p {
 ========================================= */
 
 .contact-section {
-    padding: 70px 9% 140px;
+    padding: 40px 9% 100px;
 }
 
 .contact-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 80px;
+    gap: 60px;
 
     max-width: 1250px;
     margin: 0 auto;
 }
 
 .contact-card {
-    padding-top: 10px;
+    padding-top: 0;
     min-width: 0;
 }
 
-.contact-number {
-    display: block;
-
-    font-family: "DM Sans", Arial, sans-serif;
-    font-size: 15px;
-    font-weight: 500;
-
-    color: #302a2d;
-
-    margin-bottom: 26px;
-}
-
 .contact-label {
-    margin: 0 0 20px;
+    margin: 0 0 14px;
 
     font-family: "DM Sans", Arial, sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
 
-    letter-spacing: 0.08em;
+    letter-spacing: 0.12em;
 
-    color: #756b70;
+    color: #a7657e;
 }
 
 .contact-card h2 {
-    margin: 0 0 32px;
+    margin: 0 0 18px;
 
     font-family: "Playfair Display", Georgia, serif;
-    font-size: 42px;
+    font-size: 38px;
     font-weight: 500;
     line-height: 1.1;
 
@@ -2297,8 +2285,8 @@ footer p {
     max-width: 100%;
 
     font-family: "DM Sans", Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 15px;
+    line-height: 1.5;
 
     color: #a7657e;
     text-decoration: none;
