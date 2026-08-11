@@ -1729,3 +1729,409 @@ footer p {
     }
 
 }
+
+/* =========================================
+   EXPERIENCE PAGE
+   ========================================= */
+
+
+/* ---------- HERO ---------- */
+
+.experience-hero {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    padding-top: 95px;
+    padding-bottom: 90px;
+}
+
+.experience-hero h1 {
+    max-width: 850px;
+
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: clamp(48px, 6vw, 72px);
+
+    font-weight: 500;
+
+    line-height: 1.12;
+
+    letter-spacing: -2px;
+
+    color: #302b2d;
+
+    margin-bottom: 28px;
+}
+
+.experience-intro {
+    max-width: 700px;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    color: #665c60;
+}
+
+
+/* ---------- EXPERIENCE SECTION ---------- */
+
+.experience-section {
+    background: #f7f1f2;
+
+    padding: 80px 0 100px;
+}
+
+.experience-heading {
+    max-width: 1100px;
+
+    margin: 0 auto 45px;
+}
+
+.experience-heading h2 {
+    margin-bottom: 0;
+}
+
+
+/* ---------- EXPERIENCE GRID ---------- */
+
+.experience-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+/* ---------- EXPERIENCE CARD ---------- */
+
+.experience-card {
+    padding: 32px;
+
+    background: #fffaf9;
+
+    border: 1px solid #eadcdf;
+
+    border-radius: 18px;
+
+    min-height: 330px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #d7b8c3;
+
+    box-shadow:
+        0 18px 40px rgba(90, 60, 70, 0.08);
+}
+
+
+/* Featured current role */
+
+.featured-experience {
+    background: #eee9f5;
+
+    border-color: #ddd2e8;
+}
+
+
+/* ---------- CARD TOP ---------- */
+
+.experience-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 28px;
+}
+
+.experience-number {
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: 22px;
+
+    color: #a7657e;
+}
+
+.experience-period {
+    font-size: 12px;
+
+    color: #8c747b;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* ---------- ROLE ---------- */
+
+.experience-role {
+    display: inline-block;
+
+    width: fit-content;
+
+    padding: 5px 10px;
+
+    margin-bottom: 12px;
+
+    border-radius: 20px;
+
+    background: #f4dfe6;
+
+    color: #8d5368;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+.experience-card h3 {
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: 28px;
+
+    font-weight: 500;
+
+    line-height: 1.25;
+
+    color: #40363a;
+
+    margin-bottom: 8px;
+}
+
+.experience-card h4 {
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #a7657e;
+
+    margin-bottom: 18px;
+}
+
+
+/* ---------- DESCRIPTION ---------- */
+
+.experience-description {
+    max-width: 520px;
+
+    font-size: 14px;
+
+    line-height: 1.75;
+
+    color: #665c60;
+
+    margin-bottom: 25px;
+}
+
+
+/* ---------- TAGS ---------- */
+
+.experience-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin-top: auto;
+}
+
+.experience-tags span {
+    padding: 6px 11px;
+
+    background: #f5e9ed;
+
+    border: 1px solid #ead5dc;
+
+    border-radius: 20px;
+
+    color: #805365;
+
+    font-size: 11px;
+}
+
+
+/* ---------- WHAT I DO ---------- */
+
+.experience-skills {
+    background: #eee9f5;
+
+    padding: 90px 0;
+}
+
+.skills-inner {
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+.experience-skills h2 {
+    margin-bottom: 45px;
+}
+
+.experience-skill-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+.experience-skill-grid > div {
+    padding: 28px;
+
+    background: #fffaf9;
+
+    border: 1px solid #ddd2e8;
+
+    border-radius: 16px;
+}
+
+.experience-skill-grid span {
+    display: block;
+
+    margin-bottom: 14px;
+
+    color: #a7657e;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+.experience-skill-grid h3 {
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: 23px;
+
+    font-weight: 500;
+
+    margin-bottom: 10px;
+}
+
+.experience-skill-grid p {
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    color: #665c60;
+}
+
+
+/* ---------- CTA ---------- */
+
+.experience-cta {
+    text-align: center;
+
+    background: #40363a;
+
+    padding: 90px 20px;
+}
+
+.experience-cta .section-label {
+    color: #d9bfd0;
+}
+
+.experience-cta h2 {
+    max-width: 700px;
+
+    margin: 0 auto 22px;
+
+    color: #fffaf9;
+}
+
+.experience-cta > p:not(.section-label) {
+    max-width: 600px;
+
+    margin: 0 auto 30px;
+
+    color: #ddd2d5;
+
+    line-height: 1.7;
+}
+
+.experience-cta a {
+    display: inline-block;
+
+    padding: 12px 26px;
+
+    border: 1px solid #f2dce3;
+
+    border-radius: 30px;
+
+    color: #f8e8ed;
+
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.experience-cta a:hover {
+    background: #f2dce3;
+
+    color: #40363a;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .experience-hero {
+        padding: 70px 25px;
+    }
+
+    .experience-hero h1 {
+        font-size: 46px;
+
+        letter-spacing: -1px;
+    }
+
+    .experience-section {
+        padding: 65px 25px 75px;
+    }
+
+    .experience-heading {
+        margin-bottom: 35px;
+    }
+
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-card {
+        min-height: auto;
+
+        padding: 26px;
+    }
+
+    .experience-skills {
+        padding: 70px 25px;
+    }
+
+    .experience-skill-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
