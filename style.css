@@ -2173,31 +2173,92 @@ footer p {
 }
 
 /* =========================================
-   RESUME BUTTON
+   FINAL NAVIGATION FIX
 ========================================= */
 
+.site-header {
+    width: 100%;
+    background: #fffafa;
+    border-bottom: 1px solid #eadfe2;
+}
+
+.nav-container {
+    width: 100%;
+    max-width: 1550px;
+    margin: 0 auto;
+    padding: 22px 55px;
+
+    box-sizing: border-box;
+
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+
+.site-logo {
+    display: block !important;
+
+    font-family: "Playfair Display", Georgia, serif !important;
+    font-size: 25px !important;
+    font-weight: 600 !important;
+
+    color: #40363a !important;
+    text-decoration: none !important;
+
+    white-space: nowrap !important;
+}
+
+.main-nav {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+
+    gap: 34px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.main-nav a {
+    display: inline-flex !important;
+    align-items: center !important;
+
+    font-family: "DM Sans", Arial, sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+
+    color: #554c50 !important;
+
+    text-decoration: none !important;
+    white-space: nowrap !important;
+}
+
+.main-nav a:hover {
+    color: #a7657e !important;
+}
+
+
+/* Resume button */
+
 .main-nav .resume-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
 
-    padding: 9px 18px;
+    padding: 10px 20px !important;
 
-    border: 1px solid #c98f9d;
-    border-radius: 30px;
+    border: 1px solid #c9829a !important;
+    border-radius: 30px !important;
 
-    color: #8f5062;
+    color: #a7657e !important;
+    background: transparent !important;
 
-    text-decoration: none;
-
-    white-space: nowrap;
-
-    transition: all 0.25s ease;
+    transition: all 0.3s ease !important;
 }
 
 .main-nav .resume-btn:hover {
-    background: #f3dfe5;
-    color: #5c3944;
-    border-color: #c98f9d;
-    transform: translateY(-1px);
+    background: #f4dfe5 !important;
+    color: #8f5269 !important;
 }
