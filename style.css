@@ -2239,7 +2239,7 @@ footer p {
 ========================================= */
 
 .contact-hero {
-    padding: 125px 9% 90px;
+    padding: 125px 9% 110px;
 }
 
 .contact-hero-content {
@@ -2253,10 +2253,10 @@ footer p {
 .contact-hero h1 {
     font-family: "Playfair Display", Georgia, serif;
     font-size: 64px;
-    line-height: 1.08;
     font-weight: 500;
-    color: #30282c;
-    margin: 0 0 24px;
+    line-height: 1.05;
+    color: #302a2d;
+    margin: 0 0 28px;
 }
 
 .contact-hero h1 span {
@@ -2264,26 +2264,28 @@ footer p {
 }
 
 .contact-intro {
-    max-width: 1100px;
+    max-width: 1050px;
     font-family: "DM Sans", Arial, sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.7;
-    color: #655b60;
+    color: #665d61;
     margin: 0;
 }
 
 
-/* CONTACT DETAILS */
+/* =========================================
+   CONTACT DETAILS
+========================================= */
 
 .contact-section {
-    padding: 80px 9% 120px;
+    padding: 50px 9% 130px;
 }
 
 .contact-grid {
-    max-width: 1250px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 70px;
+    max-width: 1250px;
 }
 
 .contact-card {
@@ -2294,84 +2296,80 @@ footer p {
     display: block;
     font-family: "DM Sans", Arial, sans-serif;
     font-size: 15px;
-    color: #40363a;
-    margin-bottom: 20px;
+    color: #302a2d;
+    margin-bottom: 15px;
 }
 
 .contact-label {
     font-family: "DM Sans", Arial, sans-serif;
     font-size: 14px;
-    letter-spacing: 1.5px;
-    color: #a7657e;
-    margin: 0 0 15px;
+    letter-spacing: 0.08em;
+    color: #756b70;
+    margin: 0 0 12px;
 }
 
 .contact-card h2 {
     font-family: "Playfair Display", Georgia, serif;
     font-size: 42px;
-    line-height: 1.1;
     font-weight: 500;
-    color: #30282c;
+    line-height: 1.1;
+    color: #302a2d;
     margin: 0 0 28px;
 }
 
 .contact-link {
     font-family: "DM Sans", Arial, sans-serif;
     font-size: 16px;
-    color: #40363a;
+    color: #a7657e;
     text-decoration: none;
-    border-bottom: 1px solid #d8b8c3;
-    padding-bottom: 5px;
-    transition: color 0.25s ease;
 }
 
 .contact-link:hover {
-    color: #a7657e;
+    text-decoration: underline;
 }
 
 
-/* CLOSING CTA */
+/* =========================================
+   CONTACT CTA
+========================================= */
 
 .contact-cta {
-    padding: 120px 9%;
-    background: #f7f0f2;
-}
-
-.contact-cta .section-label {
-    margin-bottom: 35px;
+    padding: 130px 9%;
+    background: #f8f1f3;
+    text-align: center;
 }
 
 .contact-cta h2 {
-    max-width: 850px;
     font-family: "Playfair Display", Georgia, serif;
-    font-size: 58px;
-    line-height: 1.1;
+    font-size: 56px;
     font-weight: 500;
-    color: #30282c;
-    margin: 0 0 40px;
+    line-height: 1.1;
+    color: #302a2d;
+    max-width: 800px;
+    margin: 25px auto 40px;
 }
 
 .contact-cta-button {
     display: inline-block;
     padding: 15px 28px;
-    border: 1px solid #c9879f;
+    border: 1px solid #c9829a;
     border-radius: 30px;
-
-    font-family: "DM Sans", Arial, sans-serif;
-    font-size: 15px;
     color: #a7657e;
     text-decoration: none;
-
+    font-family: "DM Sans", Arial, sans-serif;
+    font-size: 15px;
     transition: all 0.25s ease;
 }
 
 .contact-cta-button:hover {
     background: #a7657e;
-    color: #ffffff;
+    color: white;
 }
 
 
-/* FOOTER */
+/* =========================================
+   FOOTER
+========================================= */
 
 .site-footer {
     padding: 30px 9%;
@@ -2380,10 +2378,10 @@ footer p {
 }
 
 .site-footer p {
+    margin: 0;
     font-family: "DM Sans", Arial, sans-serif;
     font-size: 14px;
-    color: #756a6f;
-    margin: 0;
+    color: #756b70;
 }
 
 
@@ -2394,11 +2392,11 @@ footer p {
 @media (max-width: 900px) {
 
     .contact-hero {
-        padding: 90px 7% 70px;
+        padding: 90px 7% 80px;
     }
 
     .contact-hero h1 {
-        font-size: 52px;
+        font-size: 50px;
     }
 
     .contact-grid {
@@ -2406,44 +2404,7 @@ footer p {
         gap: 55px;
     }
 
-    .contact-cta {
-        padding: 90px 7%;
-    }
-
     .contact-cta h2 {
-        font-size: 48px;
+        font-size: 45px;
     }
-}
-
-
-@media (max-width: 600px) {
-
-    .contact-hero {
-        padding: 70px 6% 55px;
-    }
-
-    .contact-hero h1 {
-        font-size: 42px;
-    }
-
-    .contact-intro {
-        font-size: 17px;
-    }
-
-    .contact-section {
-        padding: 60px 6% 80px;
-    }
-
-    .contact-card h2 {
-        font-size: 36px;
-    }
-
-    .contact-cta {
-        padding: 70px 6%;
-    }
-
-    .contact-cta h2 {
-        font-size: 40px;
-    }
-
 }
