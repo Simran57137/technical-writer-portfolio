@@ -2172,22 +2172,32 @@ footer p {
 
 }
 
-/* =========================
-   Resume Button
-   ========================= */
+/* =========================================
+   RESUME BUTTON
+========================================= */
 
-.resume-btn {
-    display: inline-block;
-    padding: 10px 20px;
+.main-nav .resume-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 9px 18px;
+
     border: 1px solid #c98f9d;
     border-radius: 30px;
-    color: #8f5062 !important;
+
+    color: #8f5062;
+
     text-decoration: none;
-    transition: all 0.3s ease;
+
+    white-space: nowrap;
+
+    transition: all 0.25s ease;
 }
 
-.resume-btn:hover {
+.main-nav .resume-btn:hover {
     background: #f3dfe5;
-    color: #5c3944 !important;
-    transform: translateY(-2px);
+    color: #5c3944;
+    border-color: #c98f9d;
+    transform: translateY(-1px);
 }
