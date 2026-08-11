@@ -2202,3 +2202,38 @@ footer p {
     }
 
 }
+
+/* =========================================
+   ABOUT PAGE NAVIGATION FIX
+========================================= */
+
+.about-page .site-header {
+    width: 100%;
+}
+
+.about-page .nav-container {
+    width: 100%;
+    max-width: 1550px;
+    margin: 0 auto;
+    padding: 24px 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-sizing: border-box;
+}
+
+.about-page .main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 38px;
+
+    margin: 0;
+    padding: 0;
+}
+
+.about-page .main-nav a {
+    white-space: nowrap;
+}
