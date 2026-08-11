@@ -2237,3 +2237,235 @@ footer p {
 .about-page .main-nav a {
     white-space: nowrap;
 }
+
+/* =========================================
+   CONTACT PAGE
+========================================= */
+
+
+/* CONTACT HERO */
+
+.contact-hero {
+    padding: 110px 7% 80px;
+    background: #fffafa;
+}
+
+.contact-hero-content {
+    max-width: 900px;
+}
+
+.contact-hero h1 {
+    margin: 15px 0 25px;
+
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(52px, 7vw, 92px);
+    line-height: 1.02;
+    font-weight: 500;
+
+    color: #30282b;
+}
+
+.contact-hero h1 span {
+    color: #a7657e;
+    font-style: italic;
+}
+
+.contact-intro {
+    max-width: 650px;
+
+    font-family: "DM Sans", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+
+    color: #6b6064;
+}
+
+
+/* CONTACT SECTION */
+
+.contact-section {
+    padding: 60px 7% 100px;
+
+    background: #fffafa;
+}
+
+.contact-grid {
+    max-width: 1250px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.contact-card {
+    padding: 35px;
+
+    min-height: 250px;
+
+    background: #f8eef0;
+    border: 1px solid #eadfe2;
+
+    border-radius: 18px;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 15px 35px rgba(80, 50, 60, 0.08);
+}
+
+.contact-number {
+    display: block;
+
+    margin-bottom: 35px;
+
+    font-family: "DM Sans", Arial, sans-serif;
+    font-size: 13px;
+
+    color: #a7657e;
+}
+
+.contact-label {
+    margin: 0 0 8px;
+
+    font-family: "DM Sans", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+
+    color: #8f7b81;
+}
+
+.contact-card h2 {
+    margin: 0 0 20px;
+
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 30px;
+    font-weight: 500;
+
+    color: #40363a;
+}
+
+.contact-link {
+    font-family: "DM Sans", Arial, sans-serif;
+    font-size: 15px;
+
+    color: #a7657e;
+
+    text-decoration: none;
+
+    word-break: break-word;
+
+    transition: color 0.25s ease;
+}
+
+.contact-link:hover {
+    color: #6f4052;
+}
+
+
+/* CONTACT CTA */
+
+.contact-cta {
+    padding: 100px 7%;
+
+    text-align: center;
+
+    background: #f4e5e8;
+}
+
+.contact-cta h2 {
+    max-width: 750px;
+
+    margin: 15px auto 35px;
+
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(40px, 5vw, 65px);
+    line-height: 1.1;
+    font-weight: 500;
+
+    color: #40363a;
+}
+
+.contact-cta-button {
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    border: 1px solid #a7657e;
+    border-radius: 30px;
+
+    font-family: "DM Sans", Arial, sans-serif;
+    font-size: 15px;
+
+    color: #ffffff;
+    background: #a7657e;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.contact-cta-button:hover {
+    background: #8f5269;
+    border-color: #8f5269;
+
+    transform: translateY(-2px);
+}
+
+
+/* FOOTER */
+
+.site-footer {
+    padding: 25px 7%;
+
+    text-align: center;
+
+    background: #fffafa;
+
+    border-top: 1px solid #eadfe2;
+}
+
+.site-footer p {
+    margin: 0;
+
+    font-family: "DM Sans", Arial, sans-serif;
+    font-size: 13px;
+
+    color: #8a7d82;
+}
+
+
+/* =========================================
+   CONTACT PAGE — MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .contact-hero {
+        padding: 80px 7% 60px;
+    }
+
+    .contact-hero h1 {
+        font-size: 52px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-card {
+        min-height: auto;
+    }
+
+    .contact-cta {
+        padding: 75px 7%;
+    }
+
+}
