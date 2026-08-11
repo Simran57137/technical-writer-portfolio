@@ -37,77 +37,113 @@ p {
 }
 
 
-/* ---------- Navigation ---------- */
+/* =========================================
+   NAVIGATION
+   ========================================= */
 
-header {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-
-    padding: 22px 7%;
-
-    background: rgba(255, 250, 249, 0.94);
-    backdrop-filter: blur(10px);
-
-    border-bottom: 1px solid #eee1e3;
+.site-header {
+    width: 100%;
+    background: #fffafa;
+    border-bottom: 1px solid #eadfe2;
 }
 
-nav {
+.nav-container {
+    max-width: 1550px;
+    margin: 0 auto;
+
+    padding: 24px 55px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 30px;
 }
 
-.logo {
+.site-logo {
     font-family: "Playfair Display", Georgia, serif;
 
-    font-size: 22px;
-
+    font-size: 25px;
     font-weight: 600;
 
     color: #40363a;
+
+    text-decoration: none;
+
+    white-space: nowrap;
 }
 
-.logo:hover {
-    color: #a7657e;
-}
-
-.nav-links {
+.main-nav {
     display: flex;
 
     align-items: center;
 
-    gap: 32px;
+    justify-content: flex-end;
+
+    gap: 38px;
+
+    margin: 0;
+    padding: 0;
 }
 
-.nav-links a {
-    font-size: 14px;
+.main-nav a {
+    font-family: "DM Sans", Arial, sans-serif;
 
+    font-size: 15px;
     font-weight: 500;
 
-    color: #51494c;
+    color: #554c50;
 
-    transition: color 0.3s ease;
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    transition: color 0.25s ease;
 }
 
-.nav-links a:hover {
+.main-nav a:hover {
     color: #a7657e;
 }
 
-nav a {
-    font-size: 14px;
-    font-weight: 500;
-    color: #51494c;
-
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
+.main-nav a.active {
     color: #a7657e;
 }
 
 
+/* =========================================
+   MOBILE NAVIGATION
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .nav-container {
+        padding: 20px 25px;
+
+        flex-direction: column;
+
+        gap: 18px;
+    }
+
+    .main-nav {
+        gap: 22px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .main-nav {
+        gap: 15px;
+    }
+
+    .main-nav a {
+        font-size: 13px;
+    }
+
+}
 /* ---------- General Sections ---------- */
 
 section {
