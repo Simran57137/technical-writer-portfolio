@@ -1242,3 +1242,490 @@ footer p {
     }
 
 }
+
+/* =========================================
+   EXPERIENCE PAGE
+   ========================================= */
+
+
+/* ---------- Experience Hero ---------- */
+
+.experience-hero {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding-top: 90px;
+    padding-bottom: 70px;
+}
+
+.experience-hero h1 {
+    max-width: 850px;
+
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: clamp(48px, 6vw, 72px);
+
+    font-weight: 500;
+
+    line-height: 1.15;
+
+    letter-spacing: -2px;
+
+    color: #302b2d;
+
+    margin-bottom: 28px;
+}
+
+.experience-hero > p:last-child {
+    max-width: 750px;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+}
+
+
+/* ---------- Experience Section ---------- */
+
+.experience-section {
+    background: #f7f1f2;
+
+    padding-top: 75px;
+    padding-bottom: 90px;
+}
+
+.experience-heading {
+    max-width: 1100px;
+
+    margin: 0 auto 55px;
+}
+
+.experience-heading h2 {
+    margin-bottom: 0;
+}
+
+
+/* ---------- Timeline ---------- */
+
+.timeline {
+    max-width: 1100px;
+
+    margin: auto;
+
+    position: relative;
+}
+
+
+/* Vertical line */
+
+.timeline::before {
+    content: "";
+
+    position: absolute;
+
+    left: 185px;
+
+    top: 10px;
+
+    bottom: 10px;
+
+    width: 1px;
+
+    background: #d9c6cc;
+}
+
+
+/* ---------- Timeline Item ---------- */
+
+.timeline-item {
+    display: grid;
+
+    grid-template-columns: 150px 70px 1fr;
+
+    gap: 0;
+
+    position: relative;
+
+    padding-bottom: 70px;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+
+/* ---------- Date ---------- */
+
+.timeline-date {
+    padding-top: 5px;
+
+    padding-right: 20px;
+
+    text-align: right;
+
+    color: #8c6977;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    font-weight: 600;
+}
+
+
+/* ---------- Timeline Marker ---------- */
+
+.timeline-marker {
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    padding-top: 6px;
+
+    z-index: 2;
+}
+
+.timeline-marker span {
+    display: block;
+
+    width: 13px;
+
+    height: 13px;
+
+    border-radius: 50%;
+
+    background: #a7657e;
+
+    border: 4px solid #f7f1f2;
+
+    box-sizing: content-box;
+}
+
+
+/* ---------- Timeline Content ---------- */
+
+.timeline-content {
+    background: #fffaf9;
+
+    border: 1px solid #eadcdf;
+
+    border-radius: 16px;
+
+    padding: 32px 35px;
+
+    transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateY(-4px);
+
+    border-color: #d9b9c4;
+
+    box-shadow: 0 15px 35px rgba(100, 70, 80, 0.07);
+}
+
+
+/* Current role */
+
+.current-role .timeline-content {
+    background: #eee9f5;
+
+    border-color: #ddd2e8;
+}
+
+.current-role .timeline-marker span {
+    background: #8b6c99;
+}
+
+
+/* ---------- Role Text ---------- */
+
+.role-type {
+    display: inline-block;
+
+    padding: 5px 10px;
+
+    background: #f4dfe6;
+
+    border-radius: 20px;
+
+    color: #8d5368;
+
+    font-size: 10px;
+
+    letter-spacing: 1.5px;
+
+    font-weight: 700;
+
+    margin-bottom: 14px;
+}
+
+.timeline-content h3 {
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: 30px;
+
+    font-weight: 500;
+
+    line-height: 1.25;
+
+    color: #40363a;
+
+    margin-bottom: 8px;
+}
+
+.timeline-content h4 {
+    color: #a7657e;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    margin-bottom: 18px;
+}
+
+.timeline-content > p:not(.role-type) {
+    max-width: 700px;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+
+/* ---------- Experience List ---------- */
+
+.timeline-content ul {
+    max-width: 760px;
+
+    margin: 0 0 24px;
+
+    padding-left: 20px;
+}
+
+.timeline-content li {
+    margin-bottom: 10px;
+
+    padding-left: 5px;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* ---------- Experience Tags ---------- */
+
+.experience-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+.experience-tags span {
+    padding: 6px 11px;
+
+    background: #f4e7eb;
+
+    border: 1px solid #ead4da;
+
+    border-radius: 20px;
+
+    color: #805365;
+
+    font-size: 11px;
+}
+
+
+/* ---------- Skills Snapshot ---------- */
+
+.experience-skills {
+    background: #eee9f5;
+
+    padding-top: 80px;
+    padding-bottom: 85px;
+}
+
+.experience-skills > .section-label,
+.experience-skills > h2 {
+    max-width: 1100px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.experience-skills h2 {
+    margin-bottom: 40px;
+}
+
+.experience-skill-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+.experience-skill-grid > div {
+    padding: 28px;
+
+    background: #fffaf9;
+
+    border: 1px solid #ddd2e8;
+
+    border-radius: 15px;
+}
+
+.experience-skill-grid span {
+    display: block;
+
+    color: #a7657e;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    margin-bottom: 15px;
+}
+
+.experience-skill-grid h3 {
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: 24px;
+
+    font-weight: 500;
+
+    margin-bottom: 10px;
+}
+
+.experience-skill-grid p {
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* ---------- Experience CTA ---------- */
+
+.experience-cta {
+    text-align: center;
+
+    background: #40363a;
+
+    padding-top: 85px;
+    padding-bottom: 90px;
+}
+
+.experience-cta .section-label {
+    color: #d9bfd0;
+}
+
+.experience-cta h2 {
+    max-width: 700px;
+
+    margin: 0 auto 25px;
+
+    color: #fffaf9;
+}
+
+.experience-cta > p:not(.section-label) {
+    max-width: 650px;
+
+    margin: 0 auto 30px;
+
+    color: #ddd2d5;
+
+    line-height: 1.7;
+}
+
+.experience-cta a {
+    display: inline-block;
+
+    padding: 12px 26px;
+
+    border: 1px solid #f2dce3;
+
+    border-radius: 30px;
+
+    color: #f8e8ed;
+
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.experience-cta a:hover {
+    background: #f2dce3;
+
+    color: #40363a;
+}
+
+
+/* ---------- Experience Mobile ---------- */
+
+@media (max-width: 768px) {
+
+    .experience-hero {
+        padding-top: 75px;
+
+        padding-bottom: 55px;
+    }
+
+    .experience-hero h1 {
+        font-size: 48px;
+    }
+
+    .experience-hero > p:last-child {
+        font-size: 17px;
+    }
+
+
+    /* Remove desktop timeline */
+
+    .timeline::before {
+        display: none;
+    }
+
+    .timeline-item {
+        display: block;
+
+        padding-bottom: 30px;
+    }
+
+    .timeline-date {
+        text-align: left;
+
+        padding: 0 0 12px 5px;
+    }
+
+    .timeline-marker {
+        display: none;
+    }
+
+    .timeline-content {
+        padding: 27px;
+    }
+
+    .timeline-content h3 {
+        font-size: 27px;
+    }
+
+
+    /* Skills */
+
+    .experience-skill-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
