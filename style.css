@@ -2242,87 +2242,110 @@ footer p {
    CONTACT PAGE
 ========================================= */
 
-
-/* CONTACT HERO */
-
-.contact-hero {
-    padding: 110px 7% 80px;
+.contact-page {
     background: #fffafa;
 }
 
-.contact-hero-content {
-    max-width: 900px;
+
+/* =========================================
+   CONTACT HERO
+========================================= */
+
+.contact-page .contact-hero {
+    padding: 105px 7% 80px;
+    background: #fffafa;
 }
 
-.contact-hero h1 {
-    margin: 15px 0 25px;
+.contact-page .contact-hero-content {
+    max-width: 1100px;
+}
 
-    font-family: "Playfair Display", Georgia, serif;
-    font-size: clamp(52px, 7vw, 92px);
-    line-height: 1.02;
+.contact-page .contact-hero .section-label {
+    margin-bottom: 22px;
+}
+
+.contact-page .contact-hero h1 {
+    max-width: 950px;
+
+    margin: 0 0 25px;
+
+    font-family: "Playfair Display", Georgia, serif !important;
+    font-size: clamp(52px, 6.5vw, 88px);
+    line-height: 1.05;
     font-weight: 500;
+
+    letter-spacing: -2px;
 
     color: #30282b;
 }
 
-.contact-hero h1 span {
+.contact-page .contact-hero h1 span {
     color: #a7657e;
     font-style: italic;
 }
 
-.contact-intro {
-    max-width: 650px;
+.contact-page .contact-intro {
+    max-width: 720px;
+
+    margin: 0;
 
     font-family: "DM Sans", Arial, sans-serif;
-    font-size: 18px;
-    line-height: 1.8;
+    font-size: 17px;
+    line-height: 1.75;
 
     color: #6b6064;
 }
 
 
-/* CONTACT SECTION */
+/* =========================================
+   CONTACT CARDS
+========================================= */
 
-.contact-section {
-    padding: 60px 7% 100px;
+.contact-page .contact-section {
+    padding: 45px 7% 105px;
 
     background: #fffafa;
 }
 
-.contact-grid {
+.contact-page .contact-grid {
     max-width: 1250px;
     margin: 0 auto;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
-    gap: 25px;
+    gap: 24px;
 }
 
-.contact-card {
-    padding: 35px;
+.contact-page .contact-card {
+    min-height: 260px;
 
-    min-height: 250px;
+    padding: 32px;
+
+    box-sizing: border-box;
 
     background: #f8eef0;
     border: 1px solid #eadfe2;
-
     border-radius: 18px;
 
-    transition: transform 0.3s ease,
-                box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
-.contact-card:hover {
+.contact-page .contact-card:hover {
     transform: translateY(-5px);
 
     box-shadow: 0 15px 35px rgba(80, 50, 60, 0.08);
 }
 
-.contact-number {
+.contact-page .contact-number {
     display: block;
 
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 
     font-family: "DM Sans", Arial, sans-serif;
     font-size: 13px;
@@ -2330,29 +2353,32 @@ footer p {
     color: #a7657e;
 }
 
-.contact-label {
+.contact-page .contact-label {
     margin: 0 0 8px;
 
     font-family: "DM Sans", Arial, sans-serif;
     font-size: 12px;
     font-weight: 600;
 
-    letter-spacing: 1.5px;
+    letter-spacing: 1.8px;
 
     color: #8f7b81;
 }
 
-.contact-card h2 {
-    margin: 0 0 20px;
+.contact-page .contact-card h2 {
+    margin: 0 0 22px;
 
-    font-family: "Playfair Display", Georgia, serif;
-    font-size: 30px;
+    font-family: "Playfair Display", Georgia, serif !important;
+    font-size: 32px;
+    line-height: 1.15;
     font-weight: 500;
 
     color: #40363a;
 }
 
-.contact-link {
+.contact-page .contact-link {
+    margin-top: auto;
+
     font-family: "DM Sans", Arial, sans-serif;
     font-size: 15px;
 
@@ -2365,36 +2391,46 @@ footer p {
     transition: color 0.25s ease;
 }
 
-.contact-link:hover {
+.contact-page .contact-link:hover {
     color: #6f4052;
 }
 
 
-/* CONTACT CTA */
+/* =========================================
+   CONTACT CTA
+========================================= */
 
-.contact-cta {
-    padding: 100px 7%;
+.contact-page .contact-cta {
+    padding: 105px 7%;
 
     text-align: center;
 
     background: #f4e5e8;
 }
 
-.contact-cta h2 {
-    max-width: 750px;
+.contact-page .contact-cta .section-label {
+    margin-bottom: 20px;
+}
 
-    margin: 15px auto 35px;
+.contact-page .contact-cta h2 {
+    max-width: 780px;
 
-    font-family: "Playfair Display", Georgia, serif;
-    font-size: clamp(40px, 5vw, 65px);
-    line-height: 1.1;
+    margin: 0 auto 35px;
+
+    font-family: "Playfair Display", Georgia, serif !important;
+    font-size: clamp(42px, 5vw, 68px);
+    line-height: 1.08;
     font-weight: 500;
+
+    letter-spacing: -1px;
 
     color: #40363a;
 }
 
-.contact-cta-button {
-    display: inline-block;
+.contact-page .contact-cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
     padding: 14px 28px;
 
@@ -2403,26 +2439,30 @@ footer p {
 
     font-family: "DM Sans", Arial, sans-serif;
     font-size: 15px;
+    font-weight: 500;
 
     color: #ffffff;
     background: #a7657e;
 
     text-decoration: none;
 
-    transition: all 0.3s ease;
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
 }
 
-.contact-cta-button:hover {
+.contact-page .contact-cta-button:hover {
     background: #8f5269;
-    border-color: #8f5269;
 
     transform: translateY(-2px);
 }
 
 
-/* FOOTER */
+/* =========================================
+   FOOTER
+========================================= */
 
-.site-footer {
+.contact-page .site-footer {
     padding: 25px 7%;
 
     text-align: center;
@@ -2432,7 +2472,7 @@ footer p {
     border-top: 1px solid #eadfe2;
 }
 
-.site-footer p {
+.contact-page .site-footer p {
     margin: 0;
 
     font-family: "DM Sans", Arial, sans-serif;
@@ -2443,28 +2483,29 @@ footer p {
 
 
 /* =========================================
-   CONTACT PAGE — MOBILE
+   MOBILE
 ========================================= */
 
 @media (max-width: 800px) {
 
-    .contact-hero {
-        padding: 80px 7% 60px;
+    .contact-page .contact-hero {
+        padding: 75px 7% 55px;
     }
 
-    .contact-hero h1 {
-        font-size: 52px;
+    .contact-page .contact-hero h1 {
+        font-size: 50px;
+        letter-spacing: -1px;
     }
 
-    .contact-grid {
+    .contact-page .contact-grid {
         grid-template-columns: 1fr;
     }
 
-    .contact-card {
-        min-height: auto;
+    .contact-page .contact-card {
+        min-height: 230px;
     }
 
-    .contact-cta {
+    .contact-page .contact-cta {
         padding: 75px 7%;
     }
 
